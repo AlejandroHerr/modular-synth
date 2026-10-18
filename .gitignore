@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+
+# KiCad backups / history / autosave
+*-backups/
+.history/
+*.bak
+*.kicad_pcb-bak
+*.sch-bak
+*-autosave*
+_autosave-*
+*.tmp
+
+# KiCad local state
+# per-user UI state (window layout, visible layers)
+*.kicad_prl
+# footprint library cache
+fp-info-cache
+*-rescue.*
+*.lck
+~*.lck
+\#auto_saved_files\#
+
+# Generated outputs (regenerate from the PCB)
+*.gbr
+*.gbrjob
+*.drl
+*.g1
+*.g2
+*.gbl
+*.gbo
+*.gbp
+*.gbs
+*.gm1
+*.gtl
+*.gto
+*.gtp
+*.gts
+jlpcb/
