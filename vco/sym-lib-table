@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "synth")(type "KiCad")(uri "${LIBRARIES}/synth.kicad_symdir")(options "")(descr "Synth pot symbol with CW/CCW pins"))
+)

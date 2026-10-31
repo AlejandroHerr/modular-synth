@@ -2960,10 +2960,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "R_Potentiometer_1"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Synth:Pot_CW_CCW"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -2983,7 +2980,7 @@
 					)
 				)
 			)
-			(property "Value" "R_Potentiometer"
+			(property "Value" "Pot_CW_CCW"
 				(at -2.54 0 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2993,7 +2990,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Synth PCB:Alpha POT Original"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3015,7 +3012,7 @@
 					)
 				)
 			)
-			(property "Description" "Potentiometer"
+			(property "Description" "Potentiometer, pin 1 = CCW end, pin 2 = wiper, pin 3 = CW end. CW pin drawn at top: turning the knob clockwise moves the wiper up toward the CW pin."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3026,7 +3023,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "resistor variable"
+			(property "ki_keywords" "resistor variable potentiometer cw ccw"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3037,7 +3034,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Potentiometer*"
+			(property "ki_fp_filters" "Alpha POT*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3048,7 +3045,7 @@
 					)
 				)
 			)
-			(symbol "R_Potentiometer_1_0_1"
+			(symbol "Pot_CW_CCW_0_1"
 				(rectangle
 					(start 1.016 2.54)
 					(end -1.016 -2.54)
@@ -3084,12 +3081,30 @@
 						(type none)
 					)
 				)
+				(text "CW"
+					(at 1.905 3.175 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(text "CCW"
+					(at 1.905 -3.175 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
 			)
-			(symbol "R_Potentiometer_1_1_1"
+			(symbol "Pot_CW_CCW_1_1"
 				(pin passive line
-					(at 0 3.81 270)
+					(at 0 -3.81 90)
 					(length 1.27)
-					(name "1"
+					(name "CCW"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3107,7 +3122,7 @@
 				(pin passive line
 					(at 3.81 0 180)
 					(length 1.27)
-					(name "2"
+					(name "W"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3122,372 +3137,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "R_Potentiometer_2"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "RV"
-				(at -4.445 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Potentiometer"
-				(at -2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Potentiometer"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "resistor variable"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Potentiometer*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_Potentiometer_2_0_1"
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.524 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Potentiometer_2_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "R_Potentiometer_3"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "RV"
-				(at -4.445 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Potentiometer"
-				(at -2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Potentiometer"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "resistor variable"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Potentiometer*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_Potentiometer_3_0_1"
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.524 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Potentiometer_3_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "3"
+					(name "CW"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7409,8 +7062,7 @@
 		)
 	)
 	(symbol
-		(lib_name "R_Potentiometer_1")
-		(lib_id "Device:R_Potentiometer")
+		(lib_id "Synth:Pot_CW_CCW")
 		(at 30.48 34.29 0)
 		(unit 1)
 		(body_style 1)
@@ -7442,8 +7094,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "CustomComponents:PTV09A4020FB103"
-			(at 29.21 41.148 0)
+		(property "Footprint" "Synth PCB:Alpha POT Original"
+			(at 30.48 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7464,7 +7116,29 @@
 				)
 			)
 		)
-		(property "Description" "Potentiometer"
+		(property "Description" "Potentiometer, pin 1 = CCW end, pin 2 = wiper, pin 3 = CW end. CW pin drawn at top: turning the knob clockwise moves the wiper up toward the CW pin."
+			(at 30.48 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cmp Name" ""
+			(at 30.48 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cmp URL" ""
 			(at 30.48 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -8407,8 +8081,7 @@
 		)
 	)
 	(symbol
-		(lib_name "R_Potentiometer_2")
-		(lib_id "Device:R_Potentiometer")
+		(lib_id "Synth:Pot_CW_CCW")
 		(at 58.42 113.03 90)
 		(unit 1)
 		(body_style 1)
@@ -8440,7 +8113,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "CustomComponents:PTV09A4020FB103"
+		(property "Footprint" "Synth PCB:Alpha POT Original"
 			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -8462,7 +8135,7 @@
 				)
 			)
 		)
-		(property "Description" "Potentiometer"
+		(property "Description" "Potentiometer, pin 1 = CCW end, pin 2 = wiper, pin 3 = CW end. CW pin drawn at top: turning the knob clockwise moves the wiper up toward the CW pin."
 			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -8924,8 +8597,7 @@
 		)
 	)
 	(symbol
-		(lib_name "R_Potentiometer_1")
-		(lib_id "Device:R_Potentiometer")
+		(lib_id "Synth:Pot_CW_CCW")
 		(at 144.78 60.96 0)
 		(unit 1)
 		(body_style 1)
@@ -8957,7 +8629,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "CustomComponents:PTV09A4020FB103"
+		(property "Footprint" "Synth PCB:Alpha POT Original"
 			(at 144.78 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8979,7 +8651,7 @@
 				)
 			)
 		)
-		(property "Description" "Potentiometer"
+		(property "Description" "Potentiometer, pin 1 = CCW end, pin 2 = wiper, pin 3 = CW end. CW pin drawn at top: turning the knob clockwise moves the wiper up toward the CW pin."
 			(at 144.78 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -10777,8 +10449,7 @@
 		)
 	)
 	(symbol
-		(lib_name "R_Potentiometer_1")
-		(lib_id "Device:R_Potentiometer")
+		(lib_id "Synth:Pot_CW_CCW")
 		(at 30.48 64.77 0)
 		(unit 1)
 		(body_style 1)
@@ -10810,7 +10481,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "CustomComponents:PTV09A4020FB103"
+		(property "Footprint" "Synth PCB:Alpha POT Original"
 			(at 30.48 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -10832,7 +10503,7 @@
 				)
 			)
 		)
-		(property "Description" "Potentiometer"
+		(property "Description" "Potentiometer, pin 1 = CCW end, pin 2 = wiper, pin 3 = CW end. CW pin drawn at top: turning the knob clockwise moves the wiper up toward the CW pin."
 			(at 30.48 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -11021,8 +10692,7 @@
 		)
 	)
 	(symbol
-		(lib_name "R_Potentiometer_3")
-		(lib_id "Device:R_Potentiometer")
+		(lib_id "Synth:Pot_CW_CCW")
 		(at 69.85 132.08 0)
 		(unit 1)
 		(body_style 1)
@@ -11054,7 +10724,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "CustomComponents:M64Y102KB40"
+		(property "Footprint" "Synth PCB:Alpha POT Original"
 			(at 69.85 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -11076,7 +10746,7 @@
 				)
 			)
 		)
-		(property "Description" "Potentiometer"
+		(property "Description" "Potentiometer, pin 1 = CCW end, pin 2 = wiper, pin 3 = CW end. CW pin drawn at top: turning the knob clockwise moves the wiper up toward the CW pin."
 			(at 69.85 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -11580,8 +11250,7 @@
 		)
 	)
 	(symbol
-		(lib_name "R_Potentiometer_2")
-		(lib_id "Device:R_Potentiometer")
+		(lib_id "Synth:Pot_CW_CCW")
 		(at 147.32 88.9 90)
 		(unit 1)
 		(body_style 1)
@@ -11613,7 +11282,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "CustomComponents:PTV09A4020FB103"
+		(property "Footprint" "Synth PCB:Alpha POT Original"
 			(at 147.32 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -11635,7 +11304,7 @@
 				)
 			)
 		)
-		(property "Description" "Potentiometer"
+		(property "Description" "Potentiometer, pin 1 = CCW end, pin 2 = wiper, pin 3 = CW end. CW pin drawn at top: turning the knob clockwise moves the wiper up toward the CW pin."
 			(at 147.32 88.9 0)
 			(hide yes)
 			(show_name no)
