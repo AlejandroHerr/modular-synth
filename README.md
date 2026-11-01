@@ -11,6 +11,8 @@ Moritz Klein's YouTube series explaining the circuit design is the main referenc
 ## Contents
 
 - `vco/`: KiCad project for a sawtooth-core analog VCO (schematic and PCB), with a separate power block schematic.
+- `vcf/`: KiCad project for a VCF (schematic and PCB).
+- `envelope-generator/`: KiCad project for an envelope generator (schematic only for now, the PCB is not laid out yet).
 
 ## References
 
